@@ -1,0 +1,47 @@
+
+html { 
+    /*Photo by NASA on Unsplash*/
+       background: url(images/background.jpg) no-repeat center center fixed; 
+       -webkit-background-size: cover;
+       -moz-background-size: cover;
+       -o-background-size: cover;
+       background-size: cover;
+     }
+
+   #container1{
+       background: #bba6ae;
+       width: 50%;
+       height: 90%;
+       font-size: 150%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: center;
+        visibility: visible;
+        
+   }
+
+   #container2{
+    background: #bba6ae;
+    width: 50%;
+    height: 90%;
+    font-size: 150%;
+     text-align: center;
+     margin: 0 auto;
+     margin-bottom: center;
+     visibility: hidden;
+     
+}
+
+#container3{
+  background: #bba6ae;
+  width: 50%;
+  height: 90%;
+  font-size: 150%;
+   text-align: center;
+   margin: 0 auto;
+   margin-top: 10%;
+   margin-bottom: center;
+   visibility: hidden;
+   
+}
+
