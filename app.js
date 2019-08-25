@@ -3,7 +3,7 @@ var userGuess = $("#question-form").click;
 var getSecondPg = document.querySelectorAll(".container2");
 var getFirstPg = document.querySelectorAll(".container1")
 var resultPg = document.querySelectorAll(".result")
-var timeLeft = 2;
+var timeLeft = 200;
 //question 1
 var myQuestions = [
    {
@@ -134,13 +134,28 @@ function secondPg() {
      
          if (timeLeft >= 0 && userGuess === myQuestions.correctAnswer){
             win++;
+          
+
+            document.getElementById("container3").style.display = "none";
+
+            document.getElementById("question-form").style.display = "none";
+
+            document.getElementById("result").innerHTML ="<h2>" + "Your  score is " + win + "<br>" + "Your incorrect score is " 
+            + loses + "<br>" + "Your incorrect score is " +  "<br>" + "</h2>";
          }
 
          if (timeLeft >= 0 && userGuess!== myQuestions.correctAnswer ){
             loses++;
+           
+
+            document.getElementById("container3").style.display = "none";
+
+            document.getElementById("question-form").style.display = "none";
+
+            document.getElementById("result").innerHTML ="<h2>" + "Your  score is " + win + "<br>" + "Your incorrect score is " 
+            + loses + "<br>" + "Your incorrect score is " +  "<br>" + "</h2>";
 
          }  if (timeLeft <= 0) {
-
 
             unanswered ++;
 
@@ -161,4 +176,3 @@ function secondPg() {
    
 
 
-endPg();
