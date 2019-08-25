@@ -1,3 +1,9 @@
+var starbtn = false;
+var userGuess = $("#question-form").click;
+var getSecondPg = document.querySelectorAll(".container2");
+var getFirstPg = document.querySelectorAll(".container1")
+var resultPg = document.querySelectorAll(".result")
+var timeLeft = 2;
 //question 1
 var myQuestions = [
    {
@@ -82,12 +88,10 @@ for (var i = 0; i < myQuestions.length; i++) {
    questionContainer.append('<br>');
 }
 
-var starbtn = false;
-var userGuess = $("#question-form").click;
+
 function secondPg() {
 
-   var getSecondPg = document.querySelectorAll(".container2");
-   var getFirstPg = document.querySelectorAll(".container1")
+ 
 
    // creating the if stament for hidding and displaying an element when hitting start button
    if (starbtn === false) {
@@ -109,16 +113,25 @@ function secondPg() {
 
       // create the start time for the timer
 
-      var timeLeft = 2;
+      
 
       //create the timer interval
       var counter = setInterval(function () {
          
          //use the id in html document to display and count down the time with a message
          document.getElementById("container3").innerHTML = "<h2>" + "You have " + timeLeft + " seconds remaining!!!" + "</h2>";
-         timeLeft -= 1;
+         timeLeft -= 1; 
+
+         
+            }, 1000);
          // create an if statment for when the timer is done it replaces the other text to display something else.
-      function endPg(){
+
+ }
+      };  
+      function endPg(){ 
+         var submit=false;
+         if (submit === false) {
+     
          if (timeLeft >= 0 && userGuess === myQuestions.correctAnswer){
             win++;
          }
@@ -128,7 +141,6 @@ function secondPg() {
 
          }  if (timeLeft <= 0) {
 
-            clearInterval(counter);
 
             unanswered ++;
 
@@ -141,10 +153,12 @@ function secondPg() {
          }
          console.log(loses);
          console.log(unanswered);
-         console.log(win);
-      }
-      }, 1000);
+     }     console.log(win);
+    } 
+  
+   
       
-   }
-};
+   
 
+
+endPg();
