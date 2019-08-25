@@ -15,6 +15,7 @@ html {
 
    #container1{
        background: #bba6ae;
+       margin-top:50%;
        width: 50%;
        height: 90%;
        font-size: 150%;
@@ -50,3 +51,29 @@ html {
    
 }
 
+#question-form{
+  color: white;
+    background: #bba6ae;
+    width: 50%;
+    height: 90%;
+    font-size: 150%;
+     text-align: center;
+     margin: 0 auto;
+     margin-top: 5%;
+     margin-bottom: center;
+     visibility: hidden;
+    
+}
+
+#result {
+  color: white;
+    background: #bba6ae;
+    width: 50%;
+    height: 90%;
+    font-size: 150%;
+     text-align: center;
+     margin: 0 auto;
+     margin-top: 5%;
+     margin-bottom: center;
+     visibility: hidden;
+}
