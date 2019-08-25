@@ -3,7 +3,7 @@ var userGuess = $("#question-form").click;
 var getSecondPg = document.querySelectorAll(".container2");
 var getFirstPg = document.querySelectorAll(".container1")
 var resultPg = document.querySelectorAll(".result")
-var timeLeft = 200;
+var timeLeft = 120;
 //question 1
 var myQuestions = [
    {
