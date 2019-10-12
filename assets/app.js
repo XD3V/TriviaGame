@@ -52,7 +52,7 @@ var myQuestions = [
          "orange-yellow star",
          "red-orange star",
          "green-blue star"
-      ],
+      ], 
       correctAnswer: 2
    },
 ];
@@ -80,7 +80,7 @@ for (var i = 0; i < myQuestions.length; i++) {
       // put the radio button into the question form  
       questionBox.append(answer);
       answer.append(radio);
-      console.log(radio)
+      console.log(radio) 
 
 
    }
@@ -99,21 +99,21 @@ function secondPg() {
       // changing 
       document.getElementById("container1").style.display = "none";
 
-      console.log("pears");
+    
 
       document.getElementById("container2").style.visibility = "visible";
 
-      console.log("apples");
+      
 
       document.getElementById("container3").style.visibility = "visible";
 
+
+
       document.getElementById("question-form").style.visibility = "visible";
 
-      console.log("banna");
+    
 
       // create the start time for the timer
-
-      
 
       //create the timer interval
       var counter = setInterval(function () {
@@ -122,14 +122,14 @@ function secondPg() {
          document.getElementById("container3").innerHTML = "<h2>" + "You have " + timeLeft + " seconds remaining!!!" + "</h2>";
          timeLeft -= 1; 
 
-         
+         console.log("Timer " + counter);
             }, 1000);
          // create an if statment for when the timer is done it replaces the other text to display something else.
 
  }
       };  
       function endPg(){ 
-         var submit=false;
+         var submit = false;
          if (submit === false) {
      
          if (timeLeft >= 0 && userGuess === myQuestions.correctAnswer){
@@ -149,7 +149,7 @@ function secondPg() {
            
 
             document.getElementById("container3").style.display = "none";
-
+ 
             document.getElementById("question-form").style.display = "none";
 
             document.getElementById("result").innerHTML ="<h2>" + "Your  score is " + win + "<br>" + "Your incorrect score is " 
@@ -166,9 +166,10 @@ function secondPg() {
             document.getElementById("result").innerHTML ="<h2>" + "Your  score is " + win + "<br>" + "Your incorrect score is " 
             + loses + "<br>" + "Your incorrect score is " +  "<br>" + "</h2>";
          }
-         console.log(loses);
-         console.log(unanswered);
-     }     console.log(win);
+         console.log("losses " + loses);
+         console.log("unanswered " + unanswered);
+         console.log("win " + win);
+     }     
     } 
   
    
